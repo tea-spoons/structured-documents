@@ -1,12 +1,9 @@
 {
   "name": "com.tea-spoons.structured-documents",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "displayName": "Structured Documents",
   "description": "Unified document parsing for fundamentally different file formats.",
   "unity": "2022.3",
-  "dependencies": {
-    "com.tea-spoons.collections": "0.6.0"
-  },
   "author": {
     "name": "Muhammad Tarek Abdou",
     "email": "muhammadtarekabdou@gmail.com",

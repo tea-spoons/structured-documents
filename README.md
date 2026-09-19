@@ -57,13 +57,17 @@ In Unity: **Window > Package Manager > + > Add package from git URL**, then ente
 https://github.com/tea-spoons/structured-documents.git
 ```
 
-Pin a release by appending a tag, for example `#v0.6.1`.
+Pin a release by appending a tag, for example `#v0.7.0`.
 
 ### Dependencies
 
-Unity cannot resolve git dependencies automatically, so add these to your project first:
+None. Structured Documents works on its own and installs from the git URL without adding anything else.
 
-- `com.tea-spoons.collections` 0.6.0
+It uses the optional package below when your project has it (Unity detects it automatically) and falls back to plain behaviour when it does not.
+
+| Package | Used for |
+|---|---|
+| Collections (`com.tea-spoons.collections` 0.6.0+) | The dictionary of lists behind `PreloadingStructuredDocument.data`. Without it, subclasses get a small built-in equivalent with the same members (`Add`, `GetValueCount`, `Clear` and the indexer). |
 
 ## Notes
 

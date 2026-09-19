@@ -43,5 +43,26 @@ namespace TeaSpoons.StructuredDocuments.Editor.Tests
 
             Assert.AreEqual("aa", document.GetText("heading2"));
         }
+
+        [Test]
+        public void MissingPathGivesTheDefault()
+        {
+            Assert.AreEqual("none", document.GetText("missing", 0, "none"));
+        }
+
+        [Test]
+        public void IndexPastTheLastBlockGivesTheDefault()
+        {
+            Assert.AreEqual("none", document.GetText("heading2", 1, "none"));
+        }
+
+        [Test]
+        public void ClearRemovesAllBlocks()
+        {
+            document.Clear();
+
+            Assert.AreEqual("none", document.GetText("heading1", 0, "none"));
+            Assert.AreEqual("none", document.GetText("heading2", 0, "none"));
+        }
     }
 }

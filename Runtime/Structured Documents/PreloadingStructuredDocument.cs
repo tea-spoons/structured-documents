@@ -6,7 +6,7 @@ namespace TeaSpoons.StructuredDocuments
     /// <summary>
     /// A <see cref="StructuredDocument"/> that preloads its blocks during loading rather than parsing them on the fly.
     /// </summary>
-    public abstract class PreloadingStructuredDocument : StructuredDocument
+    public abstract partial class PreloadingStructuredDocument : StructuredDocument
     {
         protected readonly ListDictionary<string, DataBlock> data = new();
 

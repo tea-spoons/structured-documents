@@ -3,7 +3,7 @@
     "rootNamespace": "TeaSpoons.StructuredDocuments.Editor.Tests",
     "references": [
         "GUID:2e57648c88c85ab4688834d3457cc7e5",
-        "GUID:f1075758a4a14e847afe615175334b70",
+        "TeaSpoons.Collections",
         "GUID:27619889b8ba8c24980f49ee34dbb44a",
         "GUID:0acc523941302664db1f4e527237feb3"
     ],

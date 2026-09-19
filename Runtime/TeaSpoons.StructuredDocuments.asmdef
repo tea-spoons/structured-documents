@@ -1,22 +1,27 @@
 {
-  "name": "TeaSpoons.StructuredDocuments",
-  "rootNamespace": "TeaSpoons.StructuredDocuments",
-  "references": [
-    "GUID:f1075758a4a14e847afe615175334b70"
-  ],
-  "includePlatforms": [],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
-  "versionDefines": [
-    {
-      "name": "com.unity.nuget.newtonsoft-json",
-      "expression": "3.2.1",
-      "define": "NEWTONSOFT_JSON"
-    }
-  ],
-  "noEngineReferences": false
+    "name": "TeaSpoons.StructuredDocuments",
+    "rootNamespace": "TeaSpoons.StructuredDocuments",
+    "references": [
+        "TeaSpoons.Collections"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.nuget.newtonsoft-json",
+            "expression": "3.2.1",
+            "define": "NEWTONSOFT_JSON"
+        },
+        {
+            "name": "com.tea-spoons.collections",
+            "expression": "0.6.0",
+            "define": "TEASPOONS_COLLECTIONS"
+        }
+    ],
+    "noEngineReferences": false
 }
